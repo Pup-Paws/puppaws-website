@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Sticky Navbar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600,900|Open+Sans" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                        <img class="logo_full" src="PP_assets/Puppaws@2x.png" width="auto" height="32px">
+                        
+                        <img class="logo_mobile" src="PP_assets/Puppaws_c@2x.png" width="auto" height="32px">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><button class="nav_btn"><a href="#">Download the app</a></button></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="header">
+                <h1>Header Info</h1>
+                <button>Download Now</button>
+                </div>
+
+            </header>
+            <div class="section">
+                <div class="heading" id="center">
+                    <h1 id="green_header">Simple process to a happy dog</h1>
+                </div>
+
+                <!-- 3 columns -->
+                    <div class="row">
+                    <div class="col3" id="center">
+                        <img class="icon_img" src="PP_assets/icon_1@2x.png" alt="icon">
+                        <h3 id="green_header" >Open the App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="col3" id="center">
+                        <img class="icon_img" src="PP_assets/icon_2@2x.png" alt="icon">
+                        <h3 id="green_header">Set Reminders</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="col3" id="center">
+                        <img class="icon_img" src="PP_assets/icon_1@2x.png"  alt="icon">
+                        <h3 id="green_header">Perform Tasks</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----section1--->
+            <div class="section">
+                <div class="row">
+                    <div class="col2" id="center" >
+                        <div class="container">
+                            <img class="section_img_full" src="PP_assets/Paw_img_1@2x.png" alt="icon" max-width="600px" height="auto">
+                            <img class="section_img_mobile" src="PP_assets/section_1@2x.png">
+                        </div>
+                    </div>
+                    <div class="col2" id="info">
+                        <div class="container">
+                            <h1 id="green_header">Puppaws a day, <br> Keeps the flaws away</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----section2--->
+            <div class="section">
+                <div class="row">
+                    <div class="col2 col2_left" id="center">
+                        <img class="section_img_full" src="PP_assets/Paw_img_2@2x.png" alt="icon" max-width="600px" height="auto">
+                        <img class="section_img_mobile" src="PP_assets/section_2@2x.png">
+                    </div>
+                    <div class="col2 col2_right" id="info">
+                        <div id="v_align">
+                            <h1 id="green_header">Build a stronger Bond <br>with your pet</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        
+            <!----Video section--->
+            <div class="bg">
+                <div class="section" id="center" style="color: white">
+                    <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. </p>
+                    <video style="margin-top: 24px" controls> 
+                        <source src="PP_assets/Prototype_Comp.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            <!----Team section--->
+                <div class="section">
+                    <div class="row">
+                        <div class="col2 col2_center" style="color: white">
+                            <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                            <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                        </div>
+                        <div class="col2" id="center">
+                            <img class="section_img_full" src="PP_assets/Team_img@2x.png" alt="icon" max-width="500px" height="auto">
+                            <img class="section_img_mobile" src="PP_assets/Team_img@2x.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script type="text/javascript">
+
+            // Menu-toggle button
+
+            $(document).ready(function() {
+                $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+                });
+            });
+
+            // Scrolling Effect
+
+            /*$(window).on("scroll", function() {
+                if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+
+                else {
+                    $('nav').removeClass('black');
+                }
+            })*/
+
+
+        </script>
+    </body>
+</html>

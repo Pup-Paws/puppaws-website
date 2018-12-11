@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Sticky Navbar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+
+                    <div class="logo">
+                        <img src="PP_assets/Puppaws@2x.png" width="auto" height="32px">
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li><button class="nav_btn"><a href="#">Download the app</a></button></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="header">
+                <h1>Header Info</h1>
+                <button>Download Now</button>
+                </div>
+
+            </header>
+            <div class="col_container">
+                <div id="center" style="padding-top: 32px; padding-bottom:24px">
+                    <h1>Simple process to a happy dog</h1>
+                </div>
+
+                <!-- 3 columns -->
+                    <!-- one-third -->
+                    <div class="row">
+                    <div class="col3" id="center">
+                        <img class="icon_img" src="PP_assets/icon_1@2x.png" alt="icon">
+                        <h3>Open the App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="col3" id="center">
+                        <img class="icon_img" src="PP_assets/icon_2@2x.png" alt="icon">
+                        <h3>Set Reminders</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="col3" id="center">
+                        <img class="icon_img" src="PP_assets/icon_1@2x.png"  alt="icon">
+                        <h3>Perform Tasks</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+
+            <!----section1--->
+            <div class="col_container">
+                <div class="col2" id="center" >
+                        <img class="section_img" src="PP_assets/Paw_img_1@2x.png" alt="icon" max-width="600px" height="auto">
+                        <img class="section_img_mobile" src="PP_assets/section_1@2x.png">
+                    <div id="v_align">
+                            <h1>Puppaws a day, <br> Keeps the flaws away</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                        </div>
+                    </div>
+                    <div class="col2" id="center" >
+                        <img class="section_img_full" src="PP_assets/Paw_img_1@2x.png" alt="icon" max-width="600px" height="auto">
+                        <img class="section_img_mobile" src="PP_assets/section_1@2x.png">
+                    <div id="v_align">
+                            <h1>Puppaws a day, <br> Keeps the flaws away</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                        </div>
+                    </div>
+            </div>
+            
+            <!----Video section--->
+            <div class="bg">
+            <div class="section" id="center" style="color: white">
+                    <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                    <img src="default-placeholder.png" height="237" alt="icon">
+            </div>
+
+            <!----Team section--->
+            <div class="col_container">
+                    <div class="col2" style="color: white">
+                        <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa ultricies. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare.</p>
+                    </div>
+                    <div class="col2" id="center">
+                        <img class="section_img" src="PP_assets/Team_img@2x.png" alt="icon" max-width="500px" height="auto">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        <script type="text/javascript">
+
+            // Menu-toggle button
+
+            $(document).ready(function() {
+                $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+                });
+            });
+
+            // Scrolling Effect
+
+            $(window).on("scroll", function() {
+                if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+
+                else {
+                    $('nav').removeClass('black');
+                }
+            })
+
+
+        </script>
+
+    </body>
+</html>
