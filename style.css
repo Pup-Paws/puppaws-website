@@ -23,10 +23,6 @@ h1{
     font-weight: 900;
 }
 
-.heading{
-    padding: 48px 0px;
-}
-
 #green_header{
     color: #00251A;
 }
@@ -157,17 +153,21 @@ nav ul li a {
     padding: 24px;
 }
 
-.row{
-    padding: 0px 72px;
-}
+
 
 .row .col2{
     height: 100%;
 }
 
+.row .col3{
+    
+}
+
 .container{
     width: 100%;
     overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
@@ -176,8 +176,9 @@ nav ul li a {
 .col2 {
     float: right;
     width: 50%;
-    padding: 72px 32px;
     overflow: hidden;
+    display: table;
+    padding: 0px 48px;
 }
 
 .col2_right{
@@ -206,18 +207,29 @@ nav ul li a {
 }
 
 .section{
+    height: 500px;
+    overflow: hidden;
+    padding: 48px 0px;
+}
+
+.section_3{
     height: auto;
     overflow: hidden;
+    padding: 48px 0px;
+}
+
+.section_video{
+    height: 700px;
+    overflow: hidden;
+    padding: 48px;
 }
 
 
 .bg{
     background-color: #00251A;
-    padding-top: 56px;
 }
 
 video{
-    margin-top: 48;
     width:75%;
     height: auto;
 }
@@ -230,10 +242,211 @@ video{
     clear: both;
 }
 
+.row{
+    height: 100%;
+}
 
 
 
-@media(max-width: 786px) {
+@media(max-width: 1440px) {
+    
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.125em;
+      line-height: 27px;
+      color: #4A4A4A;
+}
+    
+    
+    .section_img_full{
+    display: block;
+    width: 90%;
+    height: auto;
+}
+    
+    .section{
+    height: 750px;
+    overflow: hidden;
+    padding: 48px 0px;
+}
+    
+    .section_3{
+    height: auto;
+    overflow: hidden;
+    padding: 48px;
+    }
+    
+    .section_video{
+    height: auto;
+    overflow: hidden;
+    padding: 48px;
+}
+    
+}
+
+
+@media(max-width: 1024px) {
+    
+    
+    
+    .section_img_full{
+    display: block;
+    width: 95%;
+    height: auto;
+}
+    
+    .section{
+    height: 100%;
+    overflow: hidden;
+    padding: 24px 0px;
+}
+    
+    .section_3{
+    height: auto;
+    overflow: hidden;
+    padding: 24px 0px;
+    }
+    
+    .section_video{
+    height: auto;
+    overflow: hidden;
+    padding: 24px;
+}
+    
+}
+
+
+@media(max-width: 768px) {
+    
+    .header{
+        padding: 0px 16px;
+    }
+    
+    .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+}
+    
+   .logo_full{
+    display: none;
+}
+
+.logo_mobile{
+    display: block;
+}     
+
+nav{
+    position: fixed;
+    z-index: 1;
+}
+    
+nav ul {
+    max-height: 0px;
+    background: #000;
+}
+
+nav.black ul {
+    background: white;
+}
+
+.showing {
+    max-height: 34em;
+}
+
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+
+      .menu-icon {
+            display: block;
+      }
+
+    .col3{
+        width: 100%;
+        padding: 24px 40px; 
+    }
+
+    .col2{
+        padding: 8px ;
+        float: right;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .col2_mobile{
+        display: block;
+    }
+    
+    .col2_full{
+        display: none;
+    }
+    
+    .col2_right{
+        float: left;
+    }
+    
+    .row .col2{
+    height: 50%;
+}
+    
+    
+    .section_img_full{
+    width: 75%;
+    display: none;
+}
+    .section_img_mobile{
+        display: block;
+        width: 100%;
+    }
+    
+ 
+col2_center{
+    text-align: center;
+}
+    
+    
+    .section{
+    height: auto;
+    overflow: hidden;
+    padding: 32px;
+}
+    
+    .section_3{
+    height: auto;
+    overflow: hidden;
+    padding: 24px 56px;
+    }
+    
+    .section_video{
+    height: auto;
+    overflow: hidden;
+    padding: 24px 40px;
+}
+    
+    video{
+    width:100%;
+    height: auto;
+}
+
+    
+}
+
+
+
+@media(max-width: 425px) {
+    
+    .header{
+        padding: 0px 16px;
+    }
+    
+    button{
+      padding: 20px 40px;  
+    }
 
 .logo {
     position: fixed;
@@ -280,12 +493,11 @@ nav ul li {
 
     .col3{
         width: 100%;
-        padding: 24px;
-        
+        padding: 24px 16px; 
     }
 
     .col2{
-        padding: 24px 0px;
+        padding: 16px 0px ;
         float: right;
         width: 100%;
         height: 100%;
@@ -317,56 +529,35 @@ nav ul li {
         width: 100%;
     }
     
-    .section{
-        padding: 16px;
-    }
-
-    
-    #margin{
-        margin-bottom: 48px;
-    }
-    
+ 
 col2_center{
     text-align: center;
 }
     
-.bg{
-    background-color: #00251A;
-    padding-top: 56px;
     
-}
-    
- 
-    
-@media only screen and (max-width: 600px) {
-
-    .heading{
-    padding: 24px 0px;
-}
-
-    
-.section{
+    .section{
     height: auto;
     overflow: hidden;
+    padding: 24px 16px;
 }
-  
-    .bg{
-        padding-top: 48px;
-    }
-
-    .col2{
-        padding: 8px 0px;
+    
+    .section_3{
+    height: auto;
+    overflow: hidden;
+    padding: 24px 24px;
     }
     
-    .row{
-        padding: 24px;
-    }
+    .section_video{
+    height: auto;
+    overflow: hidden;
+    padding: 24px 16px;
+}
     
     video{
-    margin-top: 48px;
-    width:90%;
+    width:100%;
     height: auto;
-    }
+}
+
 
 }
 
